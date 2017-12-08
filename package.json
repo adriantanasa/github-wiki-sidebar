@@ -1,0 +1,48 @@
+{
+  "name": "github-wiki-sidebar",
+  "version": "1.0.0",
+  "description": "Automaticaly generate a multi-level github wiki sidebar menu (_Sidebar.md) from the filenames in the wiki repository",
+  "main": "bin/github-wiki-sidebar.js",
+  "scripts": {
+    "lint": "eslint index.js bin",
+    "github-wiki-sidebar": "node ./bin/github-wiki-sidebar.js"
+  },
+  "bin": {
+    "github-wiki-sidebar": "./bin/github-wiki-sidebar.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriantanasa/github-wiki-sidebar.git"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "engines": {
+    "node": ">=6.11.0"
+  },
+  "keywords": [
+    "github",
+    "wiki",
+    "sidebar",
+    "github wiki",
+    "github wiki menu",
+    "github wiki sidebar",
+    "wiki sidebar",
+    "git wiki sidebar",
+    "sidebar generator"
+  ],
+  "author": "Adrian Tanasa <adrian_tanasa@yahoo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adriantanasa/github-wiki-sidebar/issues"
+  },
+  "homepage": "https://github.com/adriantanasa/github-wiki-sidebar#readme",
+  "dependencies": {
+    "git-wiki-to-html": "^0.2.2",
+    "inquirer": "^4.0.1",
+    "shelljs": "^0.7.8"
+  },
+  "devDependencies": {
+    "eslint": "^2.10.2"
+  }
+}
