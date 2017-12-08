@@ -2,7 +2,7 @@
 
 Multi-level github wiki sidebar menu generator (_Sidebar.md) from the filenames in the wiki repository 
 
-See example of wiki generated sidebar at https://github.com/adriantanasa/github-wiki-sidebar
+See example of wiki generated sidebar at https://github.com/adriantanasa/github-wiki-sidebar/wiki
 
 Starting from a github wiki with the following pages:
 
