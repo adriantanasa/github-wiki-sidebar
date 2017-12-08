@@ -6,6 +6,7 @@
     },
     "rules": {
         "order": [
+            "Home.md"
         ]
     },
     "separator": ":-",
