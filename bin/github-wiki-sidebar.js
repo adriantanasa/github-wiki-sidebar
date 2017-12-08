@@ -1,12 +1,9 @@
 #!/usr/bin/env node
 /**
- * CLI helper tool for generating giHub Wiki sidebar 
- *
- * Note: After `npm install` the path to ./node_modules/bin/ can be used
- *
+ * The cli github-wiki-sidebar script
  */
 'use strict';
-const debug = require('debug')('git-wiki-sidebar');
+const debug = require('debug')('github-wiki-sidebar');
 const path = require('path');
 var shell = require('shelljs');
 const fs = require('fs');
@@ -52,9 +49,9 @@ const buildSidebar = function(doSidebar = true, doClean = true, doOptionFile = n
 
     if (doSidebar) {
         debug('Build the _Sidebar.md file ...');
-        let pathBin = path.join(baseDir, '/../../git-wiki-to-html/bin/git-wiki-to-html');
+        let pathBin = path.join(baseDir, '../node_modules/git-wiki-to-html/bin/git-wiki-to-html');
         let result = shell.exec('node ' + pathBin + ' --template=markdown', {silent: true}).stdout;
-        if (result.match(/done/g)) {
+        if (result.match(/DONE/g)) {
             myConsole.log('_Sidebar.md generated.');
         } else {
             myConsole.log('Error generating _Sidebar.md: ' + result);
