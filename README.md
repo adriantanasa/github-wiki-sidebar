@@ -1,5 +1,8 @@
 # github-wiki-sidebar
 
+[![NPM Version][npm-image]][npm-url]
+[![NPM Downloads][downloads-image]][downloads-url]
+
 Multi-level github wiki sidebar menu generator (_Sidebar.md) from the filenames in the wiki repository 
 
 See example of wiki generated sidebar at https://github.com/adriantanasa/github-wiki-sidebar/wiki
@@ -151,6 +154,10 @@ Check [Roadmap] (https://github.com/adriantanasa/github-wiki-sidebar/wiki/Roadma
 
 This module is a helper built on top of [git-wiki-to-html](https://www.npmjs.com/package/git-wiki-to-html).
 
+[npm-image]: https://img.shields.io/npm/v/github-wiki-sidebar.svg
+[npm-url]: https://npmjs.org/package/github-wiki-sidebar
+[downloads-image]: https://img.shields.io/npm/dm/github-wiki-sidebar.svg
+[downloads-url]: https://npmjs.org/package/github-wiki-sidebar
 
 
 
