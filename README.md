@@ -154,9 +154,9 @@ github-wiki-sidebar
 
 ## Contribution
 
-Feel free to create issues, fork and create PR to address them!
+Check [Roadmap](https://github.com/adriantanasa/github-wiki-sidebar/wiki/Roadmap) for planned items.
 
-Check [Roadmap] (https://github.com/adriantanasa/github-wiki-sidebar/wiki/Roadmap) for planned items.
+Feel free to create issues - and once validated, fork and create PR to address them.
 
 ## See also
 
