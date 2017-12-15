@@ -117,7 +117,19 @@ DESCRIPTION
     break;
 case 'tutorial':
 case 'init': {
-    myConsole.log('Customizing the github-wiki-ssidebar options:');
+    myConsole.log('Customize the github-wiki-sidebar job options:');
+    // get list of files
+    var files = [];
+    // TODO this should come from git-wiki-to-html
+    shell.ls('[!_]*.md').forEach((file) => {
+        files.push(file);
+    });
+
+    const reducer = (accumulator, currentValue, currentIndex) => {
+        return accumulator + '\n' + currentIndex + ') ' + currentValue;
+    };
+    let displayList = files.reduce(reducer, '\n') + '\n---\n';
+
     let questions = [
         {
             type: 'input',
@@ -136,8 +148,13 @@ case 'init': {
             name: 'category-1',
             message: 'Select the _Sidebar.md content template:',
             default: '%s'
+        },
+        {
+            type: 'input',
+            name: 'order',
+            message: 'Change the priority/order of the items in menu (ex: 3,4,0): ' + displayList,
+            default: files.indexOf('Home.md') || ''
         }
-        // TODO option for generating order based on user inpu
     ];
 
     inquirer.prompt(questions).then(answers => {
@@ -147,6 +164,14 @@ case 'init': {
         options['menu']['category-1'] = answers['category-1']
             .replace(/\\n/g, '\n')
             .replace('%s', defaultOptions['menu']['category-1']);
+        // build order
+        if (answers['order']) {
+            let orderIndexes = answers['order']
+                .toString()
+                .split(',')
+                .map((item) => { return files[parseInt(item)]; });
+            options['rules']['order'] = [... new Set([...orderIndexes])];
+        }
         // execute job
         buildSidebar(action === 'tutorial', action === 'tutorial', options, doGit, skipCredentials);
     });
