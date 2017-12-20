@@ -153,8 +153,9 @@ We are welcoming contributors - feel free to create issues and help imporve the 
 
 Github wiki menus generated with this module:
 
-* [Module's Example Wiki](https://github.com/adriantanasa/github-wiki-sidebar/wiki)
+* [AngularJS Wiki](https://github.com/angular/angular.js/wiki)
 * [ng-bootstrap Wiki \(forked\)](https://github.com/adriantanasa/ng-bootstrap/wiki)
+* [ShellJS Wiki](https://github.com/shelljs/shelljs/wiki)
 
 
 [npm-image]: https://img.shields.io/npm/v/github-wiki-sidebar.svg
