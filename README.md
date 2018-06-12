@@ -157,6 +157,7 @@ GitHub wiki menus generated with this module:
 * [ng-bootstrap Wiki](https://github.com/ng-bootstrap/ng-bootstrap/wiki)
 * [React.js Wiki](https://github.com/facebook/react/wiki)
 * [ShellJS Wiki](https://github.com/shelljs/shelljs/wiki)
+* [Synful Wiki](https://github.com/nathan-fiscaletti/synful/wiki)
 
 
 [npm-image]: https://img.shields.io/npm/v/github-wiki-sidebar.svg
