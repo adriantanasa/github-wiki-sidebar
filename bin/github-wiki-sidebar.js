@@ -87,8 +87,8 @@ NAME:
     github-wiki-sidebar
 
 SYNOPSIS
-    github-wiki-sidebar [--action=run|help|init|tutorial] [--separator=: ] [-link-template=%s] [--menu-template=%s] 
-        [--git-commit] [--skip-credentials]
+    github-wiki-sidebar [--action=run|init|tutorial] [--separator=: ] [-link-template=%s] [--menu-template=%s] 
+        [--git-push] [--skip-credentials] [--help]
 
 DESCRIPTION
     action
