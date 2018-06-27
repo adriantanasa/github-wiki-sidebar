@@ -139,7 +139,7 @@ case 'enquire': {
     const getDisplayList = () => {
         let listStr = filesOrder.reduce(reducer, '\n') + chalk.reset('\n---\n');
         return 'Change the priority/order of the items in menu'
-        + chalk.reset(' <space separated list of ids - ex: 0 2 3')
+        + chalk.reset(' <space separated list of ids - ex: 0 2 3>')
         + listStr;
     };
 

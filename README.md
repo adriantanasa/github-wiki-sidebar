@@ -75,8 +75,7 @@ github-wiki-sidebar --git-push
 github-wiki-sidebar --silent --git-push
 ```
 
-![Generate custom GitHub wiki sidebar with order and custom template](https://raw.githubusercontent.com/wiki/adriantanasa/github-wiki-sidebar/images/generating-github-wiki-sidebar-order-and-template-v20.png)
-
+[![Generate custom GitHub wiki sidebar with order and custom template - asciicast](https://asciinema.org/a/vhcfzXYJclbJqRI2zU1exDQwh.png)](https://asciinema.org/a/vhcfzXYJclbJqRI2zU1exDQwh)
 
 
 ### Debug
