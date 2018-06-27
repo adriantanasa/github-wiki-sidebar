@@ -1,6 +1,6 @@
 {
   "name": "github-wiki-sidebar",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Automaticaly generate a multi-level github wiki sidebar menu (_Sidebar.md) from the filenames in the wiki repository",
   "main": "bin/github-wiki-sidebar.js",
   "scripts": {
