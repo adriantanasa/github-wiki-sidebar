@@ -5,7 +5,9 @@
   "main": "bin/github-wiki-sidebar.js",
   "scripts": {
     "lint": "eslint index.js bin",
-    "github-wiki-sidebar": "node ./bin/github-wiki-sidebar.js"
+    "github-wiki-sidebar": "node ./bin/github-wiki-sidebar.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "bin": {
     "github-wiki-sidebar": "./bin/github-wiki-sidebar.js"
@@ -41,9 +43,11 @@
     "git-wiki-to-html": "~0.3.0",
     "inquirer": "^6.0.0",
     "shelljs": "^0.8.2",
-    "chalk": "^2.4.1"
+    "chalk": "^2.4.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "eslint": "^4.19.1"
-  }
+  },
+  "snyk": true
 }
