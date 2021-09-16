@@ -39,7 +39,7 @@
   "homepage": "https://github.com/adriantanasa/github-wiki-sidebar#readme",
   "dependencies": {
     "git-wiki-to-html": "~0.3.0",
-    "inquirer": "^6.0.0",
+    "inquirer": "^7.0.5",
     "shelljs": "^0.8.2",
     "chalk": "^2.4.1"
   },
